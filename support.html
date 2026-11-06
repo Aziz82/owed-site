@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owed Support</title>
+<meta name="description" content="Help for the Owed app: where your data lives, how to delete everything, how to revoke AI and Google access, and how to contact the developer.">
+<style>
+:root{--bg:#f7f7fb;--card:#ffffff;--text:#16161d;--muted:#5b5b6b;--line:#e3e3ec;--accent:#5b4bff}
+@media (prefers-color-scheme: dark){:root{--bg:#0f0f15;--card:#191922;--text:#ececf3;--muted:#a3a3b5;--line:#2b2b38;--accent:#8f84ff}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+nav.top{font-size:14px;margin-bottom:20px}
+nav.top a{margin-right:14px}
+h1{font-size:clamp(26px,5vw,36px);margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 20px}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:24px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:0 18px}
+summary{cursor:pointer;font-weight:650;padding:14px 0;list-style-position:outside}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details > *:last-child{margin-bottom:14px}
+a{color:var(--accent);overflow-wrap:anywhere}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+footer{margin-top:40px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">Owed</a><a href="privacy.html">Privacy</a><a href="privacy-ar.html" lang="ar">الخصوصية</a><a href="terms.html">Terms</a></nav>
+
+<h1>Owed Support</h1>
+<p class="lede">Answers to common questions. Tap a question to open it.</p>
+
+<div class="contact">
+  <strong>Contact the developer</strong><br>
+  Email <a href="mailto:aldubaib@gmail.com?subject=Owed%20support">aldubaib@gmail.com</a>. Include your device model, iOS version and the Owed version (Settings → Privacy → Version). We usually reply within a few working days. English and Arabic are both welcome.
+</div>
+
+<details open>
+<summary>Do I need an account?</summary>
+<p>No. Owed works without signing up or signing in. Google, Telegram and AI providers are optional extras you can connect later.</p>
+</details>
+
+<details>
+<summary>Where does my data live?</summary>
+<ul>
+  <li><strong>On your device</strong>, always: commitments, notes and settings.</li>
+  <li><strong>In your own iCloud</strong>, if sync is set to iCloud (the default): your private iCloud database and the "Owed" folder in iCloud Drive.</li>
+  <li><strong>In your own Google Drive</strong>, if you choose Google Drive sync: a hidden app-data file and a visible "Owed Notes" folder.</li>
+  <li><strong>In your own Google Tasks</strong>, if you connect Google: a list named "Owed".</li>
+  <li><strong>Nowhere else.</strong> Owed has no servers and no analytics. The developer never sees your data.</li>
+</ul>
+<p>To keep everything on one device, go to Settings → Sync across devices and choose Off.</p>
+</details>
+
+<details>
+<summary>How do I delete everything?</summary>
+<ol>
+  <li>In Owed: Settings → Data → Erase everything removes all commitments. Delete notes in the Notes tab.</li>
+  <li>Remove your AI key (Settings → AI engine → Remove) and disconnect Google and Telegram, which deletes stored keys and tokens. Then delete the Owed app to remove everything else on the device.</li>
+  <li>iCloud: Settings → [your name] → iCloud → Storage → Owed → Delete Data. Remove the "Owed" folder in iCloud Drive from the Files app.</li>
+  <li>Google Drive: drive.google.com → Settings → Manage apps → Owed → Options → Delete hidden app data. Delete the "Owed Notes" folder.</li>
+  <li>Google Tasks: delete the "Owed" list.</li>
+  <li>Apple Reminders: delete the "Owed" list.</li>
+</ol>
+<p>Erase everything also removes commitments from your other devices through sync. Mirrors in Google Tasks and Reminders are not deleted, so delete those lists yourself.</p>
+</details>
+
+<details>
+<summary>Do I need an AI key? What does AI send, and how do I turn it off?</summary>
+<p>No key is needed. Owed understands commitments on your device. Arabic and messy handwriting work better with a cloud provider, which is optional.</p>
+<p>If you add your own Claude, ChatGPT or other OpenAI-compatible key in Settings → AI engine, Owed asks your permission before sending anything. It then sends the text you capture, handwriting images you ask it to read, and your commitment list for Ask Owed, briefs and follow-up drafts, directly to that provider. The developer never sees these requests.</p>
+<p><strong>To revoke:</strong></p>
+<ol>
+  <li>Settings → AI engine → choose On-device.</li>
+  <li>Settings → AI engine → Remove next to your key.</li>
+  <li>Settings → Privacy → Revoke permission for that provider.</li>
+  <li>Optional: delete the key in your provider's console (for example console.anthropic.com or platform.openai.com).</li>
+</ol>
+</details>
+
+<details>
+<summary>How do I disconnect Google and revoke its access?</summary>
+<ol>
+  <li>In Owed: Settings → Google &amp; Microsoft 365 → Disconnect (Tasks and Calendar), and Settings → Sync across devices → Disconnect Google Drive.</li>
+  <li>Then remove Owed from your Google account at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+</ol>
+<p>Owed only asks for its own Drive files, the "Owed" list in Google Tasks, and calendar free/busy times. It never sees your other files or event titles.</p>
+</details>
+
+<details>
+<summary>Why does Google say "Google hasn't verified this app"?</summary>
+<p>While Google reviews Owed's sign-in, some accounts may see this notice or be blocked. You can keep using Owed with iCloud or on-device storage. Google features are optional.</p>
+</details>
+
+<details>
+<summary>How do I disconnect Telegram or remove a webhook?</summary>
+<p>Settings → Telegram → Disconnect Telegram. You can also delete the bot with @BotFather. For webhooks, open Settings → Webhooks and swipe a webhook to remove it.</p>
+</details>
+
+<details>
+<summary>Is Microsoft 365 supported?</summary>
+<p>Not yet. The Microsoft section in Settings shows "Not available in this build yet". No data is sent to Microsoft.</p>
+</details>
+
+<details>
+<summary>Nudges are not arriving</summary>
+<ul>
+  <li>Allow notifications for Owed in iOS Settings → Notifications.</li>
+  <li>Check Settings → Nudges and your working hours and days in Owed.</li>
+  <li>If you use an iPhone and an iPad, check which device is set to ring.</li>
+</ul>
+</details>
+
+<details>
+<summary>Can I try Owed with sample data?</summary>
+<p>Yes. Choose "Explore with sample data" on the welcome screen, or Settings → Data → Load sample data. Remove it later with Settings → Data → Remove sample data.</p>
+</details>
+
+<footer>
+<p>See also the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+</footer>
+</main>
+</body>
+</html>

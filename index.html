@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owed: Promise Tracker</title>
+<meta name="description" content="Owed is a commitment tracker for iPhone and iPad: what you owe and what is owed to you, captured in seconds and nudged at the right moment.">
+<style>
+:root{--bg:#f7f7fb;--card:#ffffff;--text:#16161d;--muted:#5b5b6b;--line:#e3e3ec;--accent:#5b4bff;--accent-ink:#ffffff}
+@media (prefers-color-scheme: dark){:root{--bg:#0f0f15;--card:#191922;--text:#ececf3;--muted:#a3a3b5;--line:#2b2b38;--accent:#8f84ff;--accent-ink:#0f0f15}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+header{margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:15px;color:var(--muted);letter-spacing:.02em;text-transform:uppercase}
+.mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#6d5bff,#ff5fa2)}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:18px 0 12px}
+.lede{font-size:19px;color:var(--muted);margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin:22px 0}
+h2{font-size:20px;margin:0 0 10px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:4px 0}
+a{color:var(--accent)}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
+.links a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--text);font-weight:600}
+.links a span{display:block;font-weight:400;font-size:14px;color:var(--muted)}
+.cta{display:inline-block;margin-top:18px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px}
+footer{margin-top:40px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand"><div class="mark" aria-hidden="true"></div>Owed</div>
+  <h1>Who you owe, and who owes you.</h1>
+  <p class="lede">Owed is a commitment tracker for iPhone and iPad. It keeps two ledgers, what you owe and what is owed to you. Capture a promise by typing, speaking, writing by hand, scanning a screenshot, or sharing a message into the app, and Owed fills in the person, the direction and the due date for you. It then nudges you in a free moment before something is due, and drafts a polite chaser when someone is late, in English or Arabic. Owed has no accounts, no servers, no ads and no analytics. Your commitments stay on your device unless you turn on sync with your own iCloud or Google Drive, and AI features are optional and use your own API key.</p>
+  <a class="cta" href="#" aria-disabled="true">Coming soon on the App Store</a>
+</header>
+
+<section class="card">
+  <h2>Highlights</h2>
+  <ul>
+    <li>Two ledgers: "I owe" and "Owed to me", grouped by Late, Today, This week and Later</li>
+    <li>Capture by text, voice, Apple Pencil, screenshot, share sheet or Siri</li>
+    <li>Nudges timed around your calendar and working week (Sunday to Thursday by default in the Gulf)</li>
+    <li>Follow-up drafts in Friendly, Firm or Formal tone, in English or Arabic</li>
+    <li>Notes and PDF annotation with Apple Pencil, organized in folders</li>
+    <li>Widgets, Siri and Shortcuts, and two-way sync with Apple Reminders</li>
+    <li>Optional: Google Tasks, Google Calendar free/busy, Telegram, webhooks, and your own Claude, ChatGPT or other AI key</li>
+  </ul>
+</section>
+
+<nav class="links" aria-label="Legal and support">
+  <a href="privacy.html">Privacy Policy<span>What Owed handles and where it goes</span></a>
+  <a href="privacy-ar.html" lang="ar" dir="rtl">سياسة الخصوصية<span>النسخة العربية</span></a>
+  <a href="support.html">Support<span>FAQ, deleting data, contact</span></a>
+  <a href="terms.html">Terms of Use<span>License and acceptable use</span></a>
+</nav>
+
+<footer>
+  <p>Owed is made by an independent developer based in Saudi Arabia. Apple, iPhone, iPad, Apple Pencil, iCloud and Siri are trademarks of Apple Inc. Google, Google Drive, Google Tasks and Google Calendar are trademarks of Google LLC. Other product names belong to their owners. Owed is not affiliated with or endorsed by any of them.</p>
+</footer>
+</main>
+</body>
+</html>

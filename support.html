@@ -36,16 +36,17 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 
 <div class="contact">
   <strong>Contact the developer</strong><br>
-  Email <a href="mailto:aldubaib@gmail.com?subject=Owed%20support">aldubaib@gmail.com</a>. Include your device model, iOS version and the Owed version (Settings → Privacy → Version). We usually reply within a few working days. English and Arabic are both welcome.
+  Email <a href="mailto:aldubaib@gmail.com?subject=Owed%20support">aldubaib@gmail.com</a>. Include your device model, your iOS or Android version, and the Owed version (on iPhone and iPad: Settings → Privacy → Version; on Android: Android Settings → Apps → Owed). We usually reply within a few working days. English and Arabic are both welcome.
 </div>
 
 <details open>
 <summary>Do I need an account?</summary>
-<p>No. Owed works without signing up or signing in. Google, Telegram and AI providers are optional extras you can connect later.</p>
+<p>No. Owed works without signing up or signing in. Google, Telegram and AI providers are optional extras you can connect later. On Android there are no accounts at all, and the only optional extra is Cloud AI with your own key (part of Owed Pro).</p>
 </details>
 
 <details>
 <summary>Where does my data live?</summary>
+<p><strong>On iPhone and iPad</strong></p>
 <ul>
   <li><strong>On your device</strong>, always: commitments, notes and settings.</li>
   <li><strong>In your own iCloud</strong>, if sync is set to iCloud (the default): your private iCloud database and the "Owed" folder in iCloud Drive.</li>
@@ -54,10 +55,18 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
   <li><strong>Nowhere else.</strong> Owed has no servers and no analytics. The developer never sees your data.</li>
 </ul>
 <p>To keep everything on one device, go to Settings → Sync across devices and choose Off.</p>
+<p><strong>On Android</strong></p>
+<ul>
+  <li><strong>On your device only</strong>, in the app's private storage: commitments and settings. Android's automatic backup is turned off for Owed, and there is no iCloud or Google sync.</li>
+  <li><strong>In a backup file you export</strong>, if you choose to: a JSON file saved where you put it. Owed does not upload it.</li>
+  <li><strong>At your AI provider</strong>, only if you use Cloud AI (Owed Pro) with your own key and have given permission: the text and commitment data for the feature you used, sent directly from your phone.</li>
+  <li><strong>Nowhere else.</strong> No servers, no analytics, no accounts.</li>
+</ul>
 </details>
 
 <details>
 <summary>How do I delete everything?</summary>
+<p><strong>On iPhone and iPad</strong></p>
 <ol>
   <li>In Owed: Settings → Data → Erase everything removes all commitments. Delete notes in the Notes tab.</li>
   <li>Remove your AI key (Settings → AI engine → Remove) and disconnect Google and Telegram, which deletes stored keys and tokens. Then delete the Owed app to remove everything else on the device.</li>
@@ -66,12 +75,21 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
   <li>Google Tasks: delete the "Owed" list.</li>
   <li>Apple Reminders: delete the "Owed" list.</li>
 </ol>
-<p>Erase everything also removes commitments from your other devices through sync. Mirrors in Google Tasks and Reminders are not deleted, so delete those lists yourself.</p>
+<p>On iPhone and iPad, Erase everything also removes commitments from your other devices through sync. Mirrors in Google Tasks and Reminders are not deleted, so delete those lists yourself.</p>
+<p><strong>On Android</strong></p>
+<ol>
+  <li>In Owed: Settings → Erase everything deletes your commitments, preferences, saved AI keys and AI permission. It keeps your Owed Pro purchase, which Google Play holds for your account.</li>
+  <li>Or uninstall Owed, which deletes all of its data from the phone. You can also use Android Settings → Apps → Owed → Storage → Clear data.</li>
+  <li>Delete any backup files you exported. They stay where you saved them until you remove them.</li>
+  <li>If you used Cloud AI, delete the key in your provider's console (for example console.anthropic.com or platform.openai.com).</li>
+</ol>
 </details>
 
 <details>
 <summary>Do I need an AI key? What does AI send, and how do I turn it off?</summary>
-<p>No key is needed. Owed understands commitments on your device. Arabic and messy handwriting work better with a cloud provider, which is optional.</p>
+<p>No key is needed. Owed understands commitments on your device. Arabic and (on iPhone and iPad) messy handwriting work better with a cloud provider, which is optional.</p>
+<p><strong>On Android</strong>, Cloud AI is part of Owed Pro. Owed asks your permission before sending anything, then sends the text you enter or capture and the commitment data needed for the feature you use (such as Ask Owed or the Weekly Review) directly from your phone to Anthropic, OpenAI, or an HTTPS OpenAI-compatible address you entered. Your key is stored encrypted with the Android Keystore. To stop, remove your key or turn Cloud AI off in Owed's Settings; Settings → Erase everything also deletes saved keys and your permission.</p>
+<p>The steps below are for iPhone and iPad.</p>
 <p>If you add your own Claude, ChatGPT or other OpenAI-compatible key in Settings → AI engine, Owed asks your permission before sending anything. It then sends the text you capture, handwriting images you ask it to read, and your commitment list for Ask Owed, briefs and follow-up drafts, directly to that provider. The developer never sees these requests.</p>
 <p><strong>To revoke:</strong></p>
 <ol>
@@ -84,6 +102,7 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 
 <details>
 <summary>How do I disconnect Google and revoke its access?</summary>
+<p>Google features are available on iPhone and iPad only. Owed for Android does not connect to any Google account.</p>
 <ol>
   <li>In Owed: Settings → Google &amp; Microsoft 365 → Disconnect (Tasks and Calendar), and Settings → Sync across devices → Disconnect Google Drive.</li>
   <li>Then remove Owed from your Google account at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
@@ -93,23 +112,24 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 
 <details>
 <summary>Why does Google say "Google hasn't verified this app"?</summary>
-<p>While Google reviews Owed's sign-in, some accounts may see this notice or be blocked. You can keep using Owed with iCloud or on-device storage. Google features are optional.</p>
+<p>This applies to the Google connections on iPhone and iPad. While Google reviews Owed's sign-in, some accounts may see this notice or be blocked. You can keep using Owed with iCloud or on-device storage. Google features are optional.</p>
 </details>
 
 <details>
 <summary>How do I disconnect Telegram or remove a webhook?</summary>
-<p>Settings → Telegram → Disconnect Telegram. You can also delete the bot with @BotFather. For webhooks, open Settings → Webhooks and swipe a webhook to remove it.</p>
+<p>Telegram and webhooks are available on iPhone and iPad only. Settings → Telegram → Disconnect Telegram. You can also delete the bot with @BotFather. For webhooks, open Settings → Webhooks and swipe a webhook to remove it.</p>
 </details>
 
 <details>
 <summary>Is Microsoft 365 supported?</summary>
-<p>Not yet. The Microsoft section in Settings shows "Not available in this build yet". No data is sent to Microsoft.</p>
+<p>Not yet, on any platform. On iPhone and iPad, the Microsoft section in Settings shows "Not available in this build yet". No data is sent to Microsoft.</p>
 </details>
 
 <details>
 <summary>Nudges are not arriving</summary>
 <ul>
-  <li>Allow notifications for Owed in iOS Settings → Notifications.</li>
+  <li>iPhone and iPad: allow notifications for Owed in iOS Settings → Notifications.</li>
+  <li>Android: allow notifications for Owed in Android Settings → Apps → Owed → Notifications. If reminders arrive late, check whether your phone's battery optimization is restricting Owed in the background.</li>
   <li>Check Settings → Nudges and your working hours and days in Owed.</li>
   <li>If you use an iPhone and an iPad, check which device is set to ring.</li>
 </ul>
@@ -117,7 +137,22 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 
 <details>
 <summary>Can I try Owed with sample data?</summary>
-<p>Yes. Choose "Explore with sample data" on the welcome screen, or Settings → Data → Load sample data. Remove it later with Settings → Data → Remove sample data.</p>
+<p>On iPhone and iPad, yes. Choose "Explore with sample data" on the welcome screen, or Settings → Data → Load sample data. Remove it later with Settings → Data → Remove sample data.</p>
+</details>
+
+<details>
+<summary>How do I back up my data or move to a new Android phone?</summary>
+<p>Android's automatic backup is turned off for Owed, so your data is not copied to the cloud. Use the export option in Owed's Settings to save a JSON backup file where you choose, copy it to the new phone, and use the import option there. The file is yours and Owed does not upload it. Keep it somewhere safe, because it contains your commitments.</p>
+</details>
+
+<details>
+<summary>What does voice dictation send on Android?</summary>
+<p>Owed opens Android's built-in speech recognition screen. Owed itself never records or receives audio and does not ask for the microphone permission; it only receives the text. The speech service, usually Google's on most Android phones, may process your speech on the device or on its servers under its own privacy policy. If your phone has no speech recognition service, the microphone button is hidden.</p>
+</details>
+
+<details>
+<summary>How does Owed Pro work on Android?</summary>
+<p>Owed Pro is a one-time purchase handled by Google Play. The purchase belongs to your Google Play account, and Erase everything does not remove it. For charges, refunds or problems with a purchase, contact Google Play support. The app and the developer never see your payment details.</p>
 </details>
 
 <footer>

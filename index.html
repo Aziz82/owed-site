@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Owed: Promise Tracker</title>
-<meta name="description" content="Owed is a commitment tracker for iPhone and iPad: what you owe and what is owed to you, captured in seconds and nudged at the right moment.">
+<meta name="description" content="Owed is a commitment tracker for iPhone, iPad and Android: what you owe and what is owed to you, captured in seconds and nudged at the right moment.">
 <style>
 :root{--bg:#f7f7fb;--card:#ffffff;--text:#16161d;--muted:#5b5b6b;--line:#e3e3ec;--accent:#5b4bff;--accent-ink:#ffffff}
 @media (prefers-color-scheme: dark){:root{--bg:#0f0f15;--card:#191922;--text:#ececf3;--muted:#a3a3b5;--line:#2b2b38;--accent:#8f84ff;--accent-ink:#0f0f15}}
@@ -25,6 +25,7 @@ a{color:var(--accent)}
 .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
 .links a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--text);font-weight:600}
 .links a span{display:block;font-weight:400;font-size:14px;color:var(--muted)}
+.cta + .cta{margin-left:10px}
 .cta{display:inline-block;margin-top:18px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px}
 footer{margin-top:40px;font-size:14px;color:var(--muted)}
 </style>
@@ -34,12 +35,13 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 <header>
   <div class="brand"><div class="mark" aria-hidden="true"></div>Owed</div>
   <h1>Who you owe, and who owes you.</h1>
-  <p class="lede">Owed is a commitment tracker for iPhone and iPad. It keeps two ledgers, what you owe and what is owed to you. Capture a promise by typing, speaking, writing by hand, scanning a screenshot, or sharing a message into the app, and Owed fills in the person, the direction and the due date for you. It then nudges you in a free moment before something is due, and drafts a polite chaser when someone is late, in English or Arabic. Owed has no accounts, no servers, no ads and no analytics. Your commitments stay on your device unless you turn on sync with your own iCloud or Google Drive, and AI features are optional and use your own API key.</p>
-  <a class="cta" href="#" aria-disabled="true">Coming soon on the App Store</a>
+  <p class="lede">Owed is a commitment tracker for iPhone, iPad and Android. It keeps two ledgers, what you owe and what is owed to you. Capture a promise by typing, speaking, writing by hand, scanning a screenshot, or sharing a message into the app, and Owed fills in the person, the direction and the due date for you. It then nudges you in a free moment before something is due, and drafts a polite chaser when someone is late, in English or Arabic. Owed has no accounts, no servers, no ads and no analytics. Your commitments stay on your device unless you turn on sync with your own iCloud or Google Drive (iPhone and iPad), and AI features are optional and use your own API key. Some features, such as handwriting, scanning, widgets, Siri, iCloud sync and the Google, Telegram and webhook connections, are on iPhone and iPad only.</p>
+  <a class="cta" href="#" aria-disabled="true">Coming soon on the App Store</a><a class="cta" href="#" aria-disabled="true">Coming soon on Google Play</a>
 </header>
 
 <section class="card">
   <h2>Highlights</h2>
+  <p>The list below describes iPhone and iPad. The Android app is described after it.</p>
   <ul>
     <li>Two ledgers: "I owe" and "Owed to me", grouped by Late, Today, This week and Later</li>
     <li>Capture by text, voice, Apple Pencil, screenshot, share sheet or Siri</li>
@@ -49,6 +51,7 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
     <li>Widgets, Siri and Shortcuts, and two-way sync with Apple Reminders</li>
     <li>Optional: Google Tasks, Google Calendar free/busy, Telegram, webhooks, and your own Claude, ChatGPT or other AI key</li>
   </ul>
+  <p><strong>On Android:</strong> two ledgers, typed, voice (Android speech recognition) and share-in capture in English and Arabic, nudges and a morning brief, follow-up drafts, and a JSON backup you export and import yourself. Data stays on the phone. Owed Pro (one-time purchase through Google Play) adds optional Cloud AI with your own Claude, ChatGPT or OpenAI-compatible key, Ask Owed and the Weekly Review.</p>
 </section>
 
 <nav class="links" aria-label="Legal and support">
@@ -59,7 +62,7 @@ footer{margin-top:40px;font-size:14px;color:var(--muted)}
 </nav>
 
 <footer>
-  <p>Owed is made by an independent developer based in Saudi Arabia. Apple, iPhone, iPad, Apple Pencil, iCloud and Siri are trademarks of Apple Inc. Google, Google Drive, Google Tasks and Google Calendar are trademarks of Google LLC. Other product names belong to their owners. Owed is not affiliated with or endorsed by any of them.</p>
+  <p>Owed is made by an independent developer based in Saudi Arabia. Apple, iPhone, iPad, Apple Pencil, iCloud and Siri are trademarks of Apple Inc. Google, Android, Google Play, Google Drive, Google Tasks and Google Calendar are trademarks of Google LLC. Other product names belong to their owners. Owed is not affiliated with or endorsed by any of them.</p>
 </footer>
 </main>
 </body>
